@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+.bp-widget .bpFabContainer {
+	border-radius: 0 !important;
+}
+.bpContainer {
+	max-width: 420px;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	font-family: "Segoe UI", sans-serif;
+}
+
+/* Dark header like MongoDB */
+.bpHeaderContainer {
+	background: linear-gradient(to right, #0c3c55, #1a596e);
+	color: white;
+	padding: 1rem;
+	border-bottom: 1px solid #1a596e;
+}
+
+/* Title text style */
+.bpHeaderContentTitle {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+/* Subtitle below title */
+.bpHeaderContentDescription {
+	font-size: 1rem;
+	opacity: 0.9;
+}
+
+/* FAB (Floating Action Button) customization */
+.bpFabIcon {
+	background-color: #0c3c55 !important;
+	color: white !important;
+}
+
+/* Input composer styling */
+.bpComposerInput {
+	border: none;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #f1f3f5;
+	font-size: 14px;
+}
+
+/* Bot message styling */
+.bpMessageContainer[data-direction="outgoing"] {
+	background-color: #e8f5fe;
+	border-radius: 12px;
+	margin: 5px 0;
+	padding: 10px;
+	max-width: 85%;
+}
+
+/* User message styling */
+.bpMessageContainer[data-direction="incoming"] {
+	background-color: #dcfce7;
+	border-radius: 12px;
+	margin: 5px 0;
+	padding: 10px;
+	max-width: 85%;
+}
+
+/* Message text headings */
+.bpMessageBlocksTextHeading1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.bpModalDialogNewConversationButton {
+	background-color: #0c3c55;
+	color: white;
+	font-weight: 600;
+}
+

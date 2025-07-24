@@ -1,0 +1,232 @@
+/* Global styles for Government Beneficiaries page */
+
+/* Reset and base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7fafc;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #256029;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #256029;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background: #1a431a;
+  outline: 2px solid #1a431a;
+}
+
+/* Modal */
+.modal-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  max-width: 95vw;
+  width: 400px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #888;
+  cursor: pointer;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+select,
+input[type="number"],
+.multi-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #f9f9f9;
+}
+
+.multi-select {
+  min-height: 2.5rem;
+}
+
+.form-actions {
+  text-align: right;
+}
+
+.error-msg {
+  color: #b91c1c;
+  background: #fee2e2;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.97rem;
+}
+
+/* Schemes */
+.schemes-section {
+  margin-top: 2rem;
+}
+
+.schemes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+@media (min-width: 600px) {
+  .schemes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.scheme-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(37,96,41,0.07);
+  padding: 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+}
+
+.scheme-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #256029;
+  margin-bottom: 0.4rem;
+}
+
+.scheme-desc {
+  font-size: 0.98rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.scheme-benefits {
+  margin: 0.5rem 0;
+  padding-left: 1.1rem;
+  font-size: 0.97rem;
+  color: #256029;
+}
+
+.scheme-criteria,
+.scheme-deadline {
+  font-size: 0.93rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.apply-btn {
+  margin-top: auto;
+  background: #f59e42;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.apply-btn:focus,
+.apply-btn:active {
+  background: #c97a1d;
+  outline: 2px solid #c97a1d;
+}
+
+/* Loading Spinner */
+.spinner {
+  border: 4px solid #e5e7eb;
+  border-top: 4px solid #256029;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 1s linear infinite;
+  margin: 2rem auto;
+  display: block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Accessibility focus states */
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid #256029;
+  outline-offset: 2px;
+}
+
+/* Empty state */
+.schemes-empty {
+  text-align: center;
+  color: #b91c1c;
+  margin-top: 1rem;
+}
